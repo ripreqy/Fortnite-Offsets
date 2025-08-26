@@ -1,32 +1,384 @@
-
-    uintptr_t UWorld = 0x17CDE608;
-    uintptr_t AcknowledgedPawn = 0x350;
-    uintptr_t PlayerController = 0x30;
-    uintptr_t LocalPlayers = 0x38;
-    uintptr_t PlayerState = 0x2C8;
-    uintptr_t OwningGameInstance = 0x240;
-    uintptr_t GameState = 0x1C8;
-    uintptr_t PlayerArray = 0x2C0;
-    uintptr_t RootComponent = 0x1B0;
-    uintptr_t current_vehicle = 0x2B78;
-    uintptr_t RelativeLocation = 0x140;
-    uintptr_t PawnPrivate = 0x320;
-    uintptr_t Mesh = 0x328;
-    uintptr_t TeamIndex = 0x12C1;
-    uintptr_t b_is_dying = 0x728;
-    uintptr_t BoneArray = 0x5E8;
-    uintptr_t ComponentToWorld = 0x1E0;
-    uintptr_t LastSubmitTimeOnScreen = 0x2F0;
-    uintptr_t current_weapon = 0x990;
-    uintptr_t weapon_data = 0x570;
-    uintptr_t AmmoCount = 0x120C;
-    uintptr_t ItemName = 0x40;
-    uintptr_t Tier = 0xA2;
-    uintptr_t Color = 0xA2;
-    uintptr_t habanero_component = 0xA88; 
-    uintptr_t username_component = 0xB48;
-    uintptr_t Platform = 0x430;
-    uintptr_t TargetedFortPawn = 0x18D0;
-    uintptr_t KillScore = 0x12D8;
-    uintptr_t Seconds = 0x198;
-
+inline namespace FortniteOffsets {
+    namespace Globals {
+        inline uintptr_t AActors                                    = 0x168; // AActors 
+        inline uintptr_t CameraLocation                             = 0x178; // CameraLocation 
+        inline uintptr_t CameraRotation                             = 0x188; // CameraRotation 
+        inline uintptr_t UWorld                                     = 0x176774E8; // UWorld 
+    }
+ 
+    namespace AActor {
+        inline uintptr_t CustomTimeDilation                         = 0x68; // AActor::CustomTimeDilation 
+        inline uintptr_t RootComponent                              = 0x1B0; // AActor::RootComponent 
+    }
+ 
+    namespace ABuildingContainer {
+        inline uintptr_t HighestRarity                              = 0xDD0; // ABuildingContainer::HighestRarity 
+        inline uintptr_t SpawnSourceOverride                        = 0xC68; // ABuildingContainer::SpawnSourceOverride 
+        inline uintptr_t bAlreadySearched                           = 0xDD2; // ABuildingContainer::bAlreadySearched  BitField Index -> 2  
+    }
+ 
+    namespace ABuildingWeakSpot {
+        inline uintptr_t HitCount                                   = 0x2DC; // ABuildingWeakSpot::HitCount 
+        inline uintptr_t bActive                                    = 0x2D8; // ABuildingWeakSpot::bActive  BitField Index -> 2  
+    }
+ 
+    namespace ACharacter {
+        inline uintptr_t CharacterMovement                          = 0x330; // ACharacter::CharacterMovement 
+        inline uintptr_t Mesh                                       = 0x328; // ACharacter::Mesh 
+    }
+ 
+    namespace AFortAthenaSKPushVehicle {
+        inline uintptr_t ForwardForceTractionScale                  = 0x2234; // AFortAthenaSKPushVehicle::ForwardForceTractionScale 
+    }
+ 
+    namespace AFortAthenaVehicle {
+        inline uintptr_t CachedFuelComponent                        = 0x1388; // AFortAthenaVehicle::CachedFuelComponent 
+        inline uintptr_t CachedSpeed                                = 0xF48; // AFortAthenaVehicle::CachedSpeed 
+        inline uintptr_t CustomName                                 = 0x658; // AFortAthenaVehicle::CustomName 
+        inline uintptr_t HealthSet                                  = 0x1818; // AFortAthenaVehicle::HealthSet 
+        inline uintptr_t PushForceCurrentMultiplier                 = 0xB6C; // AFortAthenaVehicle::PushForceCurrentMultiplier 
+        inline uintptr_t TopSpeedCurrentMultiplier                  = 0xB68; // AFortAthenaVehicle::TopSpeedCurrentMultiplier 
+        inline uintptr_t VehicleAttributes                          = 0x1360; // AFortAthenaVehicle::VehicleAttributes 
+        inline uintptr_t WaterEffectsVehicleMaxSpeedKmh             = 0x9F8; // AFortAthenaVehicle::WaterEffectsVehicleMaxSpeedKmh 
+    }
+ 
+    namespace AFortPawn {
+        inline uintptr_t CurrentWeapon                              = 0x990; // AFortPawn::CurrentWeapon 
+        inline uintptr_t CurrentWeaponList                          = 0x9C8; // AFortPawn::CurrentWeaponList 
+        inline uintptr_t PreviousWeapon                             = 0x9C0; // AFortPawn::PreviousWeapon 
+        inline uintptr_t bIsDBNO                                    = 0x841; // AFortPawn::bIsDBNO  BitField Index -> 7  
+        inline uintptr_t bIsDying                                   = 0x728; // AFortPawn::bIsDying  BitField Index -> 5  
+        inline uintptr_t bIsInvulnerable                            = 0x72A; // AFortPawn::bIsInvulnerable  BitField Index -> 2  
+    }
+ 
+    namespace AFortPickup {
+        inline uintptr_t DefaultFlyTime                             = 0x5D4; // AFortPickup::DefaultFlyTime 
+        inline uintptr_t PrimaryPickupItemEntry                     = 0x370; // AFortPickup::PrimaryPickupItemEntry 
+    }
+ 
+    namespace AFortPlayerController {
+        inline uintptr_t AdditionalAimOffset                        = 0x2C78; // AFortPlayerController::AdditionalAimOffset 
+        inline uintptr_t LocationUnderReticle                       = 0x2B28; // AFortPlayerController::LocationUnderReticle 
+        inline uintptr_t OnSetFirstPersonCamera                     = 0x1090; // AFortPlayerController::OnSetFirstPersonCamera 
+        inline uintptr_t TargetedFortPawn                           = 0x18D0; // AFortPlayerController::TargetedFortPawn 
+        inline uintptr_t bAutoRunOn                                 = 0x1039; // AFortPlayerController::bAutoRunOn  BitField Index -> 3  
+    }
+ 
+    namespace AFortPlayerControllerGameplay {
+        inline uintptr_t bIsCreativeModeratorModeEnabled            = 0x3882; // AFortPlayerControllerGameplay::bIsCreativeModeratorModeEnabled  BitField Index -> 5  
+    }
+ 
+    namespace AFortPlayerPawn {
+        inline uintptr_t BuildingState                              = 0x2058; // AFortPlayerPawn::BuildingState 
+        inline uintptr_t CurrentVehicle                             = 0x2BC8; // AFortPlayerPawn::CurrentVehicle 
+        inline uintptr_t bIsParachuteOpen                           = 0x2228; // AFortPlayerPawn::bIsParachuteOpen  BitField Index -> 0  
+        inline uintptr_t bIsSkydiving                               = 0x2227; // AFortPlayerPawn::bIsSkydiving  BitField Index -> 0  
+    }
+ 
+    namespace AFortPlayerPawnAthena {
+        inline uintptr_t LastFiredDirection                         = 0x5988; // AFortPlayerPawnAthena::LastFiredDirection 
+        inline uintptr_t LastFiredLocation                          = 0x5970; // AFortPlayerPawnAthena::LastFiredLocation 
+        inline uintptr_t LastFiredTime                              = 0x59A0; // AFortPlayerPawnAthena::LastFiredTime 
+        inline uintptr_t ReviveFromDBNOTime                         = 0x4DA8; // AFortPlayerPawnAthena::ReviveFromDBNOTime 
+        inline uintptr_t bCanBeMarkedAsTeammate                     = 0x5E98; // AFortPlayerPawnAthena::bCanBeMarkedAsTeammate  BitField Index -> 0  
+    }
+ 
+    namespace AFortPlayerState {
+        inline uintptr_t Platform                                   = 0x430; // AFortPlayerState::Platform 
+    }
+ 
+    namespace AFortPlayerStateAthena {
+        inline uintptr_t AlwaysIncludeTeamAsAllies                  = 0x12B8; // AFortPlayerStateAthena::AlwaysIncludeTeamAsAllies  BitField Index -> 0  
+        inline uintptr_t KillScore                                  = 0x12D0; // AFortPlayerStateAthena::KillScore 
+        inline uintptr_t RebootCounter                              = 0x19A4; // AFortPlayerStateAthena::RebootCounter 
+        inline uintptr_t SeasonLevelUIDisplay                       = 0x12D4; // AFortPlayerStateAthena::SeasonLevelUIDisplay 
+        inline uintptr_t TeamIndex                                  = 0x12B9; // AFortPlayerStateAthena::TeamIndex 
+        inline uintptr_t TeamKillScore                              = 0x1214; // AFortPlayerStateAthena::TeamKillScore 
+        inline uintptr_t bIsDisconnected                            = 0x17D0; // AFortPlayerStateAthena::bIsDisconnected  BitField Index -> 0  
+        inline uintptr_t bIsMuted                                   = 0x14D9; // AFortPlayerStateAthena::bIsMuted  BitField Index -> 0  
+        inline uintptr_t bIsTalking                                 = 0x14D8; // AFortPlayerStateAthena::bIsTalking  BitField Index -> 0  
+        inline uintptr_t bThankedBusDriver                          = 0x1455; // AFortPlayerStateAthena::bThankedBusDriver  BitField Index -> 0  
+    }
+ 
+    namespace AFortPlayerStateZone {
+        inline uintptr_t CurrentHealth                              = 0xEB4; // AFortPlayerStateZone::CurrentHealth 
+        inline uintptr_t CurrentShield                              = 0xEBC; // AFortPlayerStateZone::CurrentShield 
+        inline uintptr_t MaxHealth                                  = 0xEB8; // AFortPlayerStateZone::MaxHealth 
+        inline uintptr_t MaxShield                                  = 0xEC0; // AFortPlayerStateZone::MaxShield 
+        inline uintptr_t Spectators                                 = 0xBE0; // AFortPlayerStateZone::Spectators 
+    }
+ 
+    namespace AFortSafeZoneIndicator {
+        inline uintptr_t SafeZonePhases                             = 0x4F0; // AFortSafeZoneIndicator::SafeZonePhases 
+    }
+ 
+    namespace AFortWeapon {
+        inline uintptr_t AccumulatedChargeTime                      = 0x12D8; // AFortWeapon::AccumulatedChargeTime 
+        inline uintptr_t AmmoCount                                  = 0x12B4; // AFortWeapon::AmmoCount 
+        inline uintptr_t ChargeTime                                 = 0x12D4; // AFortWeapon::ChargeTime 
+        inline uintptr_t CurrentProjectedImpactDistance             = 0x11E0; // AFortWeapon::CurrentProjectedImpactDistance 
+        inline uintptr_t CurrentReticleColor                        = 0x11A0; // AFortWeapon::CurrentReticleColor 
+        inline uintptr_t LastChargeTime                             = 0x12DC; // AFortWeapon::LastChargeTime 
+        inline uintptr_t TimeToEquip                                = 0x388; // AFortWeapon::TimeToEquip 
+        inline uintptr_t WeaponCoreAnimation                        = 0x17B0; // AFortWeapon::WeaponCoreAnimation 
+        inline uintptr_t WeaponData                                 = 0x5A0; // AFortWeapon::WeaponData 
+        inline uintptr_t bAllowTargeting                            = 0x1218; // AFortWeapon::bAllowTargeting  BitField Index -> 4  
+        inline uintptr_t bIgnoreTryToFireSlotCooldownRestriction    = 0x1939; // AFortWeapon::bIgnoreTryToFireSlotCooldownRestriction  BitField Index -> 0  
+        inline uintptr_t bIsChargingWeapon                          = 0x3B8; // AFortWeapon::bIsChargingWeapon  BitField Index -> 0  
+        inline uintptr_t bIsEquippingWeapon                         = 0x3A0; // AFortWeapon::bIsEquippingWeapon  BitField Index -> 0  
+        inline uintptr_t bIsReloadingWeapon                         = 0x3B9; // AFortWeapon::bIsReloadingWeapon  BitField Index -> 0  
+    }
+ 
+    namespace AFortWeaponRanged {
+        inline uintptr_t AimPitchMax                                = 0x1E50; // AFortWeaponRanged::AimPitchMax 
+        inline uintptr_t AimPitchMin                                = 0x1E4C; // AFortWeaponRanged::AimPitchMin 
+    }
+ 
+    namespace AGameStateBase {
+        inline uintptr_t PlayerArray                                = 0x2C0; // AGameStateBase::PlayerArray 
+        inline uintptr_t ServerWorldTimeSecondsDelta                = 0x2E0; // AGameStateBase::ServerWorldTimeSecondsDelta 
+    }
+ 
+    namespace APawn {
+        inline uintptr_t PlayerState                                = 0x2C8; // APawn::PlayerState 
+    }
+ 
+    namespace APlayerCameraManager {
+        inline uintptr_t CameraCachePrivate                         = 0x1530; // APlayerCameraManager::CameraCachePrivate 
+        inline uintptr_t DefaultFOV                                 = 0x2BC; // APlayerCameraManager::DefaultFOV 
+        inline uintptr_t ViewPitchMax                               = 0x27B0; // APlayerCameraManager::ViewPitchMax 
+        inline uintptr_t ViewPitchMin                               = 0x27AC; // APlayerCameraManager::ViewPitchMin 
+        inline uintptr_t ViewRollMax                                = 0x27C0; // APlayerCameraManager::ViewRollMax 
+        inline uintptr_t ViewRollMin                                = 0x27BC; // APlayerCameraManager::ViewRollMin 
+        inline uintptr_t ViewTarget                                 = 0x340; // APlayerCameraManager::ViewTarget 
+        inline uintptr_t ViewYawMax                                 = 0x27B8; // APlayerCameraManager::ViewYawMax 
+        inline uintptr_t ViewYawMin                                 = 0x27B4; // APlayerCameraManager::ViewYawMin 
+    }
+ 
+    namespace APlayerController {
+        inline uintptr_t AcknowledgedPawn                           = 0x350; // APlayerController::AcknowledgedPawn 
+        inline uintptr_t InputPitchScale                            = 0x544; // APlayerController::InputPitchScale 
+        inline uintptr_t InputRollScale                             = 0x548; // APlayerController::InputRollScale 
+        inline uintptr_t InputYawScale                              = 0x540; // APlayerController::InputYawScale 
+        inline uintptr_t NetConnection                              = 0x520; // APlayerController::NetConnection 
+        inline uintptr_t PlayerCameraManager                        = 0x360; // APlayerController::PlayerCameraManager 
+        inline uintptr_t SmoothTargetViewRotationSpeed              = 0x3A8; // APlayerController::SmoothTargetViewRotationSpeed 
+    }
+ 
+    namespace APlayerState {
+        inline uintptr_t CompressedPing                             = 0x2B0; // APlayerState::CompressedPing 
+        inline uintptr_t PawnPrivate                                = 0x320; // APlayerState::PawnPrivate 
+        inline uintptr_t PlayerId                                   = 0x2AC; // APlayerState::PlayerId 
+        inline uintptr_t PlayerNamePrivate                          = 0x340; // APlayerState::PlayerNamePrivate 
+        inline uintptr_t bIsABot                                    = 0x2B2; // APlayerState::bIsABot  BitField Index -> 3  
+    }
+ 
+    namespace AWorldSettings {
+        inline uintptr_t WorldGravityZ                              = 0x328; // AWorldSettings::WorldGravityZ 
+    }
+ 
+    namespace FCameraCacheEntry {
+        inline uintptr_t POV                                        = 0x10; // FCameraCacheEntry::POV 
+    }
+ 
+    namespace FFortBaseWeaponStats {
+        inline uintptr_t ReloadTime                                 = 0x174; // FFortBaseWeaponStats::ReloadTime 
+    }
+ 
+    namespace FFortRangedWeaponStats {
+        inline uintptr_t AthenaCrouchingSpreadMultiplier            = 0x20C; // FFortRangedWeaponStats::AthenaCrouchingSpreadMultiplier 
+        inline uintptr_t AthenaJumpingFallingSpreadMultiplier       = 0x214; // FFortRangedWeaponStats::AthenaJumpingFallingSpreadMultiplier 
+        inline uintptr_t AthenaSlidingSpreadMultiplier              = 0x210; // FFortRangedWeaponStats::AthenaSlidingSpreadMultiplier 
+        inline uintptr_t AthenaSprintingSpreadMultiplier            = 0x218; // FFortRangedWeaponStats::AthenaSprintingSpreadMultiplier 
+        inline uintptr_t FiringRate                                 = 0x284; // FFortRangedWeaponStats::FiringRate 
+        inline uintptr_t MaxSpeedForSpreadMultiplier                = 0x220; // FFortRangedWeaponStats::MaxSpeedForSpreadMultiplier 
+        inline uintptr_t MinSpeedForSpreadMultiplier                = 0x21C; // FFortRangedWeaponStats::MinSpeedForSpreadMultiplier 
+        inline uintptr_t OverrideBaseSpread                         = 0x1FC; // FFortRangedWeaponStats::OverrideBaseSpread 
+        inline uintptr_t OverrideSpreadDownsights                   = 0x204; // FFortRangedWeaponStats::OverrideSpreadDownsights 
+        inline uintptr_t RecoilHoriz                                = 0x2CC; // FFortRangedWeaponStats::RecoilHoriz 
+        inline uintptr_t RecoilVert                                 = 0x2BC; // FFortRangedWeaponStats::RecoilVert 
+        inline uintptr_t Spread                                     = 0x1F8; // FFortRangedWeaponStats::Spread 
+        inline uintptr_t SpreadDownsights                           = 0x200; // FFortRangedWeaponStats::SpreadDownsights 
+        inline uintptr_t SpreadDownsightsAdditionalCooldownTime     = 0x224; // FFortRangedWeaponStats::SpreadDownsightsAdditionalCooldownTime 
+        inline uintptr_t SpreadExponent                             = 0x228; // FFortRangedWeaponStats::SpreadExponent 
+        inline uintptr_t StandingStillSpreadMultiplier              = 0x208; // FFortRangedWeaponStats::StandingStillSpreadMultiplier 
+    }
+ 
+    namespace FFortSpectatorZoneArray {
+        inline uintptr_t SpectatorArray                             = 0x108; // FFortSpectatorZoneArray::SpectatorArray 
+    }
+ 
+    namespace FFortSpectatorZoneItem {
+        inline uintptr_t PlayerState                                = 0x10; // FFortSpectatorZoneItem::PlayerState 
+    }
+ 
+    namespace FFortTrapStats {
+        inline uintptr_t ArmTime                                    = 0x1F8; // FFortTrapStats::ArmTime 
+        inline uintptr_t DamageDelay                                = 0x200; // FFortTrapStats::DamageDelay 
+        inline uintptr_t FireDelay                                  = 0x1FC; // FFortTrapStats::FireDelay 
+    }
+ 
+    namespace FItemEntry {
+        inline uintptr_t ItemDefinition                             = 0x10; // FItemEntry::ItemDefinition 
+    }
+ 
+    namespace FMinimalViewInfo {
+        inline uintptr_t AspectRatio                                = 0x5C; // FMinimalViewInfo::AspectRatio 
+        inline uintptr_t DesiredFOV                                 = 0x34; // FMinimalViewInfo::DesiredFOV 
+        inline uintptr_t FOV                                        = 0x30; // FMinimalViewInfo::FOV 
+        inline uintptr_t Rotation                                   = 0x18; // FMinimalViewInfo::Rotation 
+    }
+ 
+    namespace FReplicatedAthenaVehicleAttributes {
+    }
+ 
+    namespace UCharacterMovementComponent {
+        inline uintptr_t LastUpdateLocation                         = 0x360; // UCharacterMovementComponent::LastUpdateLocation 
+    }
+ 
+    namespace UEngine {
+        inline uintptr_t GameViewport                               = 0xA90; // UEngine::GameViewport 
+        inline uintptr_t LargeFont                                  = 0x90; // UEngine::LargeFont 
+        inline uintptr_t SmallFont                                  = 0x50; // UEngine::SmallFont 
+        inline uintptr_t TinyFont                                   = 0x30; // UEngine::TinyFont 
+    }
+ 
+    namespace UFortClientSettingsRecord {
+        inline uintptr_t FOVMaximum                                 = 0xBE8; // UFortClientSettingsRecord::FOVMaximum 
+        inline uintptr_t FOVMinimum                                 = 0xBE4; // UFortClientSettingsRecord::FOVMinimum 
+        inline uintptr_t HUDScale                                   = 0x6B0; // UFortClientSettings
+        inline uintptr_t HUDScale                                   = 0x6B0; // UFortClientSettingsRecord::HUDScale 
+        inline uintptr_t InitialHUDScale                            = 0x6B8; // UFortClientSettingsRecord::InitialHUDScale 
+        inline uintptr_t MasterVolume                               = 0xB34; // UFortClientSettingsRecord::MasterVolume 
+        inline uintptr_t MouseSensitivity                           = 0x78C; // UFortClientSettingsRecord::MouseSensitivity 
+        inline uintptr_t MouseSensitivityX                          = 0x790; // UFortClientSettingsRecord::MouseSensitivityX 
+        inline uintptr_t MouseSensitivityY                          = 0x794; // UFortClientSettingsRecord::MouseSensitivityY 
+        inline uintptr_t MusicVolume                                = 0xB38; // UFortClientSettingsRecord::MusicVolume 
+        inline uintptr_t ScopedSlow                                 = 0x758; // UFortClientSettingsRecord::ScopedSlow 
+        inline uintptr_t TargetingSlow                              = 0x754; // UFortClientSettingsRecord::TargetingSlow 
+        inline uintptr_t bAnonymousMode                             = 0xB5D; // UFortClientSettingsRecord::bAnonymousMode  BitField Index -> 0  
+    }
+ 
+    namespace UFortItemDefinition {
+        inline uintptr_t Rarity                                     = 0xA2; // UFortItemDefinition::Rarity 
+    }
+ 
+    namespace UFortLocalPlayer {
+        inline uintptr_t ClientSettingsRecord                       = 0x368; // UFortLocalPlayer::ClientSettingsRecord 
+    }
+ 
+    namespace UFortVehicleFuelComponent {
+        inline uintptr_t ServerFuel                                 = 0x130; // UFortVehicleFuelComponent::ServerFuel 
+    }
+ 
+    namespace UFortWeaponItemDefinition {
+        inline uintptr_t HitNotifyDuration                          = 0x29C; // UFortWeaponItemDefinition::HitNotifyDuration 
+        inline uintptr_t TriggerType                                = 0x294; // UFortWeaponItemDefinition::TriggerType 
+        inline uintptr_t bAllowTargetingDuringReload                = 0x298; // UFortWeaponItemDefinition::bAllowTargetingDuringReload  BitField Index -> 0  
+    }
+ 
+    namespace UGameInstance {
+        inline uintptr_t LocalPlayers                               = 0x38; // UGameInstance::LocalPlayers 
+    }
+ 
+    namespace UGameViewportClient {
+        inline uintptr_t World                                      = 0x78; // UGameViewportClient::World 
+    }
+ 
+    namespace UItemDefinitionBase {
+        inline uintptr_t ItemName                                   = 0x40; // UItemDefinitionBase::ItemName 
+    }
+ 
+    namespace ULevel {
+        inline uintptr_t OwningWorld                                = 0x60; // ULevel::OwningWorld 
+        inline uintptr_t WorldSettings                              = 0x2C0; // ULevel::WorldSettings 
+    }
+ 
+    namespace ULocalPlayer {
+        inline uintptr_t ViewportClient                             = 0x78; // ULocalPlayer::ViewportClient 
+    }
+ 
+    namespace UMaterial {
+        inline uintptr_t Wireframe                                  = 0x1D8; // UMaterial::Wireframe  BitField Index -> 7  
+    }
+ 
+    namespace UMaterialInstance {
+        inline uintptr_t Parent                                     = 0x128; // UMaterialInstance::Parent 
+        inline uintptr_t ScalarParameterValues                      = 0x190; // UMaterialInstance::ScalarParameterValues 
+        inline uintptr_t TextureParameterValues                     = 0x1C0; // UMaterialInstance::TextureParameterValues 
+        inline uintptr_t VectorParameterValues                      = 0x1A0; // UMaterialInstance::VectorParameterValues 
+    }
+ 
+    namespace UMovementComponent {
+        inline uintptr_t Velocity                                   = 0xD8; // UMovementComponent::Velocity 
+    }
+ 
+    namespace UPlayer {
+        inline uintptr_t PlayerController                           = 0x30; // UPlayer::PlayerController 
+    }
+ 
+    namespace USceneComponent {
+        inline uintptr_t ComponentVelocity                          = 0x188; // USceneComponent::ComponentVelocity 
+        inline uintptr_t PhysicsVolume                              = 0xC8; // USceneComponent::PhysicsVolume 
+        inline uintptr_t RelativeLocation                           = 0x140; // USceneComponent::RelativeLocation 
+        inline uintptr_t RelativeRotation                           = 0x158; // USceneComponent::RelativeRotation 
+        inline uintptr_t RelativeScale3D                            = 0x170; // USceneComponent::RelativeScale3D 
+        inline uintptr_t bAbsoluteLocation                          = 0x1A0; // USceneComponent::bAbsoluteLocation  BitField Index -> 2  
+        inline uintptr_t bComponentToWorldUpdated                   = 0x1A0; // USceneComponent::bComponentToWorldUpdated  BitField Index -> 0  
+    }
+ 
+    namespace USkeletalMeshComponent {
+        inline uintptr_t GlobalAnimRateScale                        = 0xA58; // USkeletalMeshComponent::GlobalAnimRateScale 
+    }
+ 
+    namespace USkinnedMeshComponent {
+        inline uintptr_t MeshDeformerInstances                      = 0x5B8; // USkinnedMeshComponent::MeshDeformerInstances 
+        inline uintptr_t SkeletalMesh                               = 0x570; // USkinnedMeshComponent::SkeletalMesh 
+        inline uintptr_t bForceWireframe                            = 0x7B7; // USkinnedMeshComponent::bForceWireframe  BitField Index -> 6  
+    }
+ 
+    namespace UWorld {
+        inline uintptr_t GameState                                  = 0x1D0; // UWorld::GameState 
+        inline uintptr_t Levels                                     = 0x1E8; // UWorld::Levels 
+        inline uintptr_t OwningGameInstance                         = 0x248; // UWorld::OwningGameInstance 
+        inline uintptr_t PersistentLevel                            = 0x38; // UWorld::PersistentLevel 
+    }
+ 
+    namespace Calculated {
+        inline uintptr_t Bounds                                     = 0x108; // USceneComponent::Bounds 
+        inline uintptr_t LastRenderTime                             = 0x198; // UWorld::LastRenderTime 
+        inline uintptr_t LastRenderTimeOnScreen                     = 0x32C; // UPrimitiveComponent::LastRenderTimeOnScreen 
+        inline uintptr_t LocalPlayerCachedLODDistanceFactor         = 0x3AC; // APlayerController::LocalPlayerCachedLODDistanceFactor 
+    }
+ 
+    namespace BitfieldIndexs {
+        inline int AlwaysIncludeTeamAsAllies = 0;
+        inline int Wireframe = 7;
+        inline int bAbsoluteLocation = 2;
+        inline int bActive = 2;
+        inline int bAllowTargeting = 4;
+        inline int bAllowTargetingDuringReload = 0;
+        inline int bAlreadySearched = 2;
+        inline int bAnonymousMode = 0;
+        inline int bAutoRunOn = 3;
+        inline int bCanBeMarkedAsTeammate = 0;
+        inline int bComponentToWorldUpdated = 0;
+        inline int bForceWireframe = 6;
+        inline int bIgnoreTryToFireSlotCooldownRestriction = 0;
+        inline int bIsABot = 3;
+        inline int bIsChargingWeapon = 0;
+        inline int bIsCreativeModeratorModeEnabled = 5;
+        inline int bIsDBNO = 7;
+        inline int bIsDisconnected = 0;
+        inline int bIsDying = 5;
+        inline int bIsEquippingWeapon = 0;
+        inline int bIsInvulnerable = 2;
+        inline int bIsMuted = 0;
+        inline int bIsParachuteOpen = 0;
+        inline int bIsReloadingWeapon = 0;
+        inline int bIsSkydiving = 0;
+        inline int bIsTalking = 0;
+        inline int bThankedBusDriver = 0;
+    }
+ 
+}
