@@ -1,5 +1,5 @@
 namespace offsets {
-    uintptr_t UWorld = 0x177255E8;
+    uintptr_t UWorld = 0x1827F4E8;
     uintptr_t AcknowledgedPawn = 0x350;
     uintptr_t PlayerController = 0x30;
     uintptr_t LocalPlayers = 0x38;
@@ -12,22 +12,24 @@ namespace offsets {
     uintptr_t RelativeLocation = 0x140;
     uintptr_t PawnPrivate = 0x320;
     uintptr_t Mesh = 0x328;
-    uintptr_t TeamIndex = 0x12B9;
+    uintptr_t TeamIndex = 0x1191;
     uintptr_t b_is_dying = 0x728;
     uintptr_t BoneArray = 0x5E8;
     uintptr_t ComponentToWorld = 0x1E0;
     uintptr_t LastSubmitTimeOnScreen = 0x2F0;
     uintptr_t current_weapon = 0x990;
-    uintptr_t weapon_data = 0x5A0;
-    uintptr_t AmmoCount = 0x12B4;
+    uintptr_t weapon_data = 0x598;
+    uintptr_t AmmoCount = 0x1124;
     uintptr_t ItemName = 0x40;
     uintptr_t Tier = 0xA2;
     uintptr_t Color = 0xA2;
-    uintptr_t habanero_component = 0xA80;
-    uintptr_t username_component = 0xB40;
+    uintptr_t habanero_component = 0x968;
+    uintptr_t username_component = 0xA28;
     uintptr_t Platform = 0x430;
     uintptr_t TargetedFortPawn = 0x18D0;
-    uintptr_t KillScore = 0x12D0;
+    uintptr_t bIsReloadingWeapon = 0x3A9;
+    uintptr_t WeaponCoreAnimation = 0x19B8;
+    uintptr_t KillScore = 0x11A8;
     uintptr_t Levels = 0x1E8 ;
     uintptr_t Actors = 0x48;
 };
