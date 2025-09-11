@@ -1,5 +1,6 @@
 namespace offsets {
-    uintptr_t UWorld = 0x1827F4E8;
+    uintptr_t UWorld = 0x17B525E8;
+    uintptr_t GName = 0x17E5D300;
     uintptr_t AcknowledgedPawn = 0x350;
     uintptr_t PlayerController = 0x30;
     uintptr_t LocalPlayers = 0x38;
@@ -18,8 +19,8 @@ namespace offsets {
     uintptr_t ComponentToWorld = 0x1E0;
     uintptr_t LastSubmitTimeOnScreen = 0x2F0;
     uintptr_t current_weapon = 0x990;
-    uintptr_t weapon_data = 0x598;
-    uintptr_t AmmoCount = 0x1124;
+    uintptr_t weapon_data = 0x558;
+    uintptr_t AmmoCount = 0x1494;
     uintptr_t ItemName = 0x40;
     uintptr_t Tier = 0xA2;
     uintptr_t Color = 0xA2;
@@ -27,9 +28,11 @@ namespace offsets {
     uintptr_t username_component = 0xA28;
     uintptr_t Platform = 0x430;
     uintptr_t TargetedFortPawn = 0x18D0;
+    uintptr_t ProjectileSpeed = 0x2468;
+    uintptr_t ProjectileGravity = 0x246C;
     uintptr_t bIsReloadingWeapon = 0x3A9;
     uintptr_t WeaponCoreAnimation = 0x19B8;
     uintptr_t KillScore = 0x11A8;
     uintptr_t Levels = 0x1E8 ;
-    uintptr_t Actors = 0x48;
+    uintptr_t Actors = 0x38;
 };
