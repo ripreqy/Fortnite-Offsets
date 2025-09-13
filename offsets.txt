@@ -1,5 +1,5 @@
 namespace offsets {
-    uintptr_t UWorld = 0x17B525E8;
+    uintptr_t UWorld = 0x17B525A8;
     uintptr_t GName = 0x17E5D300;
     uintptr_t AcknowledgedPawn = 0x350;
     uintptr_t PlayerController = 0x30;
