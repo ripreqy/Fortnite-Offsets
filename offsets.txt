@@ -36,7 +36,7 @@
 #define CAMERA_ROTATION                0x188
 #define PLAYER_FOV                     0x3AC
 #define WORLD_TIME_SECONDS             0x198
-#define ACTORS                         0x168 
+#define ACTORS                         0x168
 #define PROJECTILE_SPEED               0x212C
 #define PROJECTILE_GRAVITY             0x2130
 #define CAMERA_MANAGER                 0x360 
