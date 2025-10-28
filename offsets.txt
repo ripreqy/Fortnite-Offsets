@@ -46,3 +46,4 @@
 #define BASEFOV                        0x370;
 #define NetConnection                  0x520
 #define RotationInput (NetConnection + 0x8)
+ 
