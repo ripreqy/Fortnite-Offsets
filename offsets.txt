@@ -1,47 +1,48 @@
-#define UWORLD                         0x175448B8
-#define GNAMES                         0x167B6600
-#define ACKNOWLEDGED_PAWN              0x358
-#define PLAYER_CONTROLLER              0x30
-#define LOCAL_PLAYERS                  0x38
-#define PLAYER_STATE                   0x2D0
-#define GAME_INSTANCE                  0x248
-#define GAME_STATE                     0x1D0
-#define PLAYER_ARRAY                   0x2C8
-#define ROOT_COMPONENT                 0x1B0
-#define CURRENT_VEHICLE                0x2C18
-#define RELATIVE_LOCATION              0x140
-#define RELATIVE_ROTATION              0x140
-#define PAWN_PRIVATE                   0x328
-#define MESH                           0x330
-#define TEAM_INDEX                     0x11A9
-#define B_IS_DYING                     0x728
-#define B_IS_DBNO                      0x841
-#define BONE_ARRAY                     0x5E8
-#define COMPONENT_TO_WORLD             0x1E0
-#define LAST_SUBMIT_TIME_ON_SCREEN     0x32C
-#define CURRENT_WEAPON                 0x990
-#define WEAPON_DATA                    0x598
-#define AMMO_COUNT                     0x144C
-#define ITEM_NAME                      0x40
-#define PRIMARY_PICKUP_ITEM_ENTRY      0x370
-#define TIER                           0xAA
-#define COLOR                          0xA2
-#define HABANERO_COMPONENT             0x940
-#define USERNAME_COMPONENT             0xA00
-#define PLATFORM                       0x440
-#define TARGETED_FORT_PAWN             0x1820
-#define KILL_SCORE                     0x11C0
-#define RANKED_PROGRESS                0xD8
-#define CAMERA_LOCATION                0x178
-#define CAMERA_ROTATION                0x188
-#define PLAYER_FOV                     0x3B4
-#define WORLD_TIME_SECONDS             0x1A0 
-#define ACTORS                         0x168
-#define PROJECTILE_SPEED               0x22A4
-#define PROJECTILE_GRAVITY             0x22A8
-#define CAMERA_MANAGER                 0x360
-#define PLAYERCAMERAMANAGER            0x360
-#define DEFAULTFOV                     0x2C4
-#define BASEFOV                        0x380
-#define NetConnection                  0x528
-#define RotationInput                  (NetConnection + 0x8)
+constexpr std::uintptr_t UWORLD = 0x1727DC38;
+constexpr std::uintptr_t GNAMES = 0x1711DC80;
+constexpr std::uintptr_t ACKNOWLEDGED_PAWN = 0x358;
+constexpr std::uintptr_t PLAYER_CONTROLLER = 0x30;
+constexpr std::uintptr_t LOCAL_PLAYERS = 0x38;
+constexpr std::uintptr_t PLAYER_STATE = 0x2D0;
+constexpr std::uintptr_t GAME_INSTANCE = 0x248;
+constexpr std::uintptr_t GAME_STATE = 0x1D0;
+constexpr std::uintptr_t PLAYER_ARRAY = 0x2C8;
+constexpr std::uintptr_t ROOT_COMPONENT = 0x1B0;
+constexpr std::uintptr_t CURRENT_VEHICLE = 0x2C18;
+constexpr std::uintptr_t RELATIVE_LOCATION = 0x140;
+constexpr std::uintptr_t RELATIVE_ROTATION = 0x140;
+constexpr std::uintptr_t PAWN_PRIVATE = 0x328;
+constexpr std::uintptr_t MESH = 0x330;
+constexpr std::uintptr_t TEAM_INDEX = 0x11A9;
+constexpr std::uintptr_t B_IS_DYING = 0x728;
+constexpr std::uintptr_t B_IS_DBNO = 0x841;
+constexpr std::uintptr_t BONE_ARRAY = 0x5F0;
+constexpr std::uintptr_t COMPONENT_TO_WORLD = 0x1E0;
+constexpr std::uintptr_t LAST_SUBMIT_TIME_ON_SCREEN = 0x32C;
+constexpr std::uintptr_t CURRENT_WEAPON = 0x990;
+constexpr std::uintptr_t WEAPON_DATA = 0x5d8;
+constexpr std::uintptr_t AMMO_COUNT = 0x144C;
+constexpr std::uintptr_t ITEM_NAME = 0x40;
+constexpr std::uintptr_t PRIMARY_PICKUP_ITEM_ENTRY = 0x370;
+constexpr std::uintptr_t TIER = 0xAA;
+constexpr std::uintptr_t COLOR = 0xA2;
+constexpr std::uintptr_t HABANERO_COMPONENT = 0x940;
+constexpr std::uintptr_t USERNAME_COMPONENT = 0xA00;
+constexpr std::uintptr_t PLATFORM = 0x440;
+constexpr std::uintptr_t TARGETED_FORT_PAWN = 0x1820;
+constexpr std::uintptr_t KILL_SCORE = 0x11C0;
+constexpr std::uintptr_t RANKED_PROGRESS = 0xD8;
+constexpr std::uintptr_t CAMERA_LOCATION = 0x178;
+constexpr std::uintptr_t CAMERA_ROTATION = 0x188;
+constexpr std::uintptr_t PLAYER_FOV = 0x3B4;
+constexpr std::uintptr_t WORLD_TIME_SECONDS = 0x198;
+constexpr std::uintptr_t ACTORS = 0x168;
+constexpr std::uintptr_t PROJECTILE_SPEED = 0x22A4;
+constexpr std::uintptr_t PROJECTILE_GRAVITY = 0x22A8;
+constexpr std::uintptr_t CAMERA_MANAGER = 0x360;
+constexpr std::uintptr_t PLAYERCAMERAMANAGER = 0x360;
+constexpr std::uintptr_t CURRENT_MOVEMENT_STYLE = 0x843; // 0x1 - 0x5
+constexpr std::uintptr_t DEFAULTFOV = 0x2C4;
+constexpr std::uintptr_t BASEFOV = 0x380;
+constexpr std::uintptr_t NetConnection = 0x528; // 0x8
+constexpr std::uintptr_t RotationInput = NetConnection + 0x8;
