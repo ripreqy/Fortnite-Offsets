@@ -46,3 +46,17 @@ constexpr std::uintptr_t DEFAULTFOV = 0x2C4;
 constexpr std::uintptr_t BASEFOV = 0x380;
 constexpr std::uintptr_t NetConnection = 0x528; // 0x8
 constexpr std::uintptr_t RotationInput = NetConnection + 0x8;
+
+
+
+NOT BY ME THANKS TO THIS ONE WHO GOT THE UWORLD ENCRYPTION <3 
+
+uintptr_t encryptedUWorld = kernel->read_t<uintptr_t>(BaseAddress + offsets::UWorld);
+uintptr_t decryptedUWorld = decryptUWorld(encryptedUWorld);
+ 
+inline uintptr_t decryptUWorld(uintptr_t encryptedAddress) noexcept {
+    return std::rotl(encryptedAddress, 32) ^ 0x8F1D3223E733EA8A;
+}
+ 
+cache::UWorld = decryptedUWorld;
+
